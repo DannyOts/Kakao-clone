@@ -1,0 +1,10 @@
+css 이론
+
+css-syntax
+css-html 연결
+박스모델(마진,패딩)
+포지션 static fixed, relative, absolute
+display block inline inline-block
+flex box
+pseudo selector (type, nth-child)
+element states hover active focus visited

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: transform 0.5s ease-in-out;
+        animation: 5s scaleAndRotateSquare infinite ease-in-out;
+      }
+      .box:hover {
+        transform: rotate(1turn) scale(0.5, 0.5);
+      }
+      @keyframes scaleAndRotateSquare {
+        /* 에니메이션 이름 적는 것 잊지 말기. */
+        /* from {
+          transform: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }  스테이지가 2개만 있으면 from-to*/
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: white;
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">11</div>
+  </body>
+</html>

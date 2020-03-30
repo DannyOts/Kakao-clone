@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS States</title>
+    <style>
+      .box {
+        background-color: red;
+        font-size: 40px;
+      }
+      .box:hover {
+        background-color: pink;
+      }
+      /* hover state 
+      커서를 해당 element 위에 올리면 색이 변하게끔 해줌 */
+      .box:active {
+        background-color: green;
+      }
+      /* active 
+      클릭시에 색이 변하게 함 */
+      .box:focus {
+        background-color: cyan;
+      }
+      /* 클릭하면 색이 바뀜 / 형식이나 링크를 활성화하거나 선택함
+      더 중요한 명령어라서 앞선 hover, active가 무시됨*/
+      /* visited only applies to links that have been clicked. */
+    </style>
+  </head>
+  <body>
+    <textarea class="box">lalalalalala</textarea>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!-- transitions, animation, transformations, media query(반응형 크기 조절) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      .box {
+        background-color: green;
+        color: white;
+        transition: color 0.5s ease-in-out;
+      }
+      /* trainsition:all 
+      1개 이상의 설정값을 바꾸고 싶다면(color, background-color...),
+         all 
+        trainstition:color - 컬러만 변경*/
+      .box:active {
+        background-color: red;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">
+      Text
+    </span>
+  </body>
+</html>
+
+<!-- transition은 focus, active, hover에서 효과적으로 적용
+트랜지션은 작성한 property(ex> color...) 혹은 all 전체에 변경효과를 준다. -->
